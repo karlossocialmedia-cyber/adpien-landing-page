@@ -5,6 +5,8 @@ import Hero from './components/Hero';
 import ImageSlider from './components/ImageSlider';
 import Services from './components/Services';
 import OnlineStores from './components/OnlineStores';
+import BookingServices from './components/BookingServices';
+import Restaurants from './components/Restaurants';
 import UseCases from './components/UseCases';
 import Calculator from './components/Calculator';
 import Testimonials from './components/Testimonials';
@@ -48,6 +50,12 @@ export default function App() {
 
         {/* 3. Tiendas Online (New interactive replica section) */}
         <OnlineStores />
+
+        {/* 3.5. Servicios y Citas (Interactive booking section) */}
+        <BookingServices />
+
+        {/* 3.6. Restaurantes (Interactive restaurants section) */}
+        <Restaurants />
 
         {/* 4. Use Cases with Interactive Mini-apps */}
         <UseCases />

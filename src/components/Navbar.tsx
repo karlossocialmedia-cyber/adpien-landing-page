@@ -107,7 +107,7 @@ export default function Navbar({ onNavigate }: NavbarProps) {
                 {/* Servicios y citas */}
                 <div 
                   className="flex items-start gap-3.5 p-3 rounded-xl hover:bg-white/5 transition-colors duration-200 cursor-pointer group/item" 
-                  onClick={() => handleItemClick('casos')}
+                  onClick={() => handleItemClick('servicios-citas')}
                 >
                   <div className="text-[#38bdf8] p-2.5 rounded-xl group-hover/item:scale-110 transition-transform duration-200">
                     <Calendar className="h-6 w-6" />
@@ -121,7 +121,7 @@ export default function Navbar({ onNavigate }: NavbarProps) {
                 {/* Restaurantes */}
                 <div 
                   className="flex items-start gap-3.5 p-3 rounded-xl hover:bg-white/5 transition-colors duration-200 cursor-pointer group/item" 
-                  onClick={() => handleItemClick('casos')}
+                  onClick={() => handleItemClick('restaurantes')}
                 >
                   <div className="text-[#38bdf8] p-2.5 rounded-xl group-hover/item:scale-110 transition-transform duration-200">
                     <Utensils className="h-6 w-6" />
@@ -210,13 +210,13 @@ export default function Navbar({ onNavigate }: NavbarProps) {
                 🛒 Tiendas online
               </button>
               <button
-                onClick={() => handleItemClick('casos')}
+                onClick={() => handleItemClick('servicios-citas')}
                 className="block w-full text-left px-6 py-2 text-sm text-slate-300 hover:text-white hover:bg-slate-800/50 rounded-lg transition-all"
               >
                 📅 Servicios y citas
               </button>
               <button
-                onClick={() => handleItemClick('casos')}
+                onClick={() => handleItemClick('restaurantes')}
                 className="block w-full text-left px-6 py-2 text-sm text-slate-300 hover:text-white hover:bg-slate-800/50 rounded-lg transition-all"
               >
                 🍴 Restaurantes
