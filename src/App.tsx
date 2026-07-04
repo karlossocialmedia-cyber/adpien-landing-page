@@ -4,9 +4,8 @@ import QuickNavTabs from './components/QuickNavTabs';
 import Hero from './components/Hero';
 import ImageSlider from './components/ImageSlider';
 import Services from './components/Services';
-import InteractiveBuilder from './components/InteractiveBuilder';
+import OnlineStores from './components/OnlineStores';
 import UseCases from './components/UseCases';
-import Integrations from './components/Integrations';
 import Calculator from './components/Calculator';
 import Testimonials from './components/Testimonials';
 import Pricing from './components/Pricing';
@@ -47,14 +46,11 @@ export default function App() {
         {/* 2. Services / What we build */}
         <Services />
 
-        {/* 3. Interactive Code Builder / Solution Assembler */}
-        <InteractiveBuilder />
+        {/* 3. Tiendas Online (New interactive replica section) */}
+        <OnlineStores />
 
         {/* 4. Use Cases with Interactive Mini-apps */}
         <UseCases />
-
-        {/* 5. Tool Integrations Showcase */}
-        <Integrations />
 
         {/* 6. Ultimate Quote Calculator & WhatsApp Form */}
         <Calculator />

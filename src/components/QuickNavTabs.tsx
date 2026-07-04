@@ -1,12 +1,7 @@
 import React, { useRef, useState, useEffect } from 'react';
 import { 
-  Wrench, 
   Briefcase, 
-  Puzzle, 
-  Calculator, 
-  Tag, 
-  HelpCircle, 
-  Zap,
+  Calculator as CalcIcon, 
   ChevronLeft,
   ChevronRight
 } from 'lucide-react';
@@ -22,12 +17,8 @@ export default function QuickNavTabs({ onNavigate }: QuickNavTabsProps) {
   const [activeSection, setActiveSection] = useState('inicio');
 
   const navItems = [
-    { name: 'Constructor en Vivo', id: 'constructor', icon: Wrench },
     { name: 'Casos de Uso', id: 'casos', icon: Briefcase },
-    { name: 'Integraciones', id: 'integraciones', icon: Puzzle },
-    { name: 'Cotización', id: 'cotizador', icon: Calculator },
-    { name: 'Precio', id: 'precios', icon: Tag },
-    { name: 'Preguntas', id: 'preguntas', icon: HelpCircle },
+    { name: 'Cotizar', id: 'cotizador', icon: CalcIcon },
   ];
 
   // Monitor scroll positioning to show/hide gradient indicators & left/right indicators
@@ -59,7 +50,7 @@ export default function QuickNavTabs({ onNavigate }: QuickNavTabsProps) {
       // Default to inicio
       let current = 'inicio';
       
-      const sections = ['constructor', 'casos', 'integraciones', 'cotizador', 'precios', 'preguntas'];
+      const sections = ['casos', 'cotizador'];
       for (const sectionId of sections) {
         const el = document.getElementById(sectionId);
         if (el) {
@@ -151,17 +142,6 @@ export default function QuickNavTabs({ onNavigate }: QuickNavTabsProps) {
             <ChevronRight className="h-4 w-4" />
           </button>
         )}
-
-        {/* Divider & Action Tab (Empezar Proyecto) */}
-        <div className="shrink-0 border-l border-slate-800 pl-4 py-1 hidden sm:flex items-center" id="quick-nav-cta">
-          <button
-            onClick={() => handleTabClick('cotizador')}
-            className="bg-gradient-to-r from-emerald-500 to-teal-600 hover:from-emerald-400 hover:to-teal-500 text-white text-[11px] font-extrabold uppercase tracking-widest px-4 py-2.5 rounded-full flex items-center gap-1.5 shadow-md shadow-emerald-500/10 hover:shadow-emerald-500/25 transition-all duration-300 cursor-pointer hover:scale-105"
-          >
-            <Zap className="h-3 w-3 text-yellow-300 fill-yellow-300 animate-pulse" />
-            Empezar Proyecto
-          </button>
-        </div>
 
       </div>
     </div>
