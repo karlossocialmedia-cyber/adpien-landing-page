@@ -4,6 +4,12 @@ import {
   ArrowRight
 } from 'lucide-react';
 
+import appDulceria from '../assets/images/app_dulceria_1783107185110.jpg';
+import appComidaRapida from '../assets/images/app_comida_rapida_1783107202989.jpg';
+import appManicure from '../assets/images/app_manicure_1783107216506.jpg';
+import appMaquillaje from '../assets/images/app_maquillaje_1783107227201.jpg';
+import appGimnasio from '../assets/images/business_app_booking_1783060903033.jpg';
+
 interface HeroProps {
   onNavigate: (sectionId: string) => void;
 }
@@ -77,31 +83,31 @@ export default function Hero({ onNavigate }: HeroProps) {
             <div className="carousel-card">
               <h4>Dulcería</h4>
               <div className="phone-mockup">
-                <img src="/src/assets/images/app_dulceria_1783107185110.jpg" alt="App Dulcería" referrerPolicy="no-referrer" />
+                <img src={appDulceria} alt="App Dulcería" referrerPolicy="no-referrer" />
               </div>
             </div>
             <div className="carousel-card">
               <h4>Comida Rápida</h4>
               <div className="phone-mockup">
-                <img src="/src/assets/images/app_comida_rapida_1783107202989.jpg" alt="App Burgers" referrerPolicy="no-referrer" />
+                <img src={appComidaRapida} alt="App Burgers" referrerPolicy="no-referrer" />
               </div>
             </div>
             <div className="carousel-card">
               <h4>Manicure</h4>
               <div className="phone-mockup">
-                <img src="/src/assets/images/app_manicure_1783107216506.jpg" alt="App Nails" referrerPolicy="no-referrer" />
+                <img src={appManicure} alt="App Nails" referrerPolicy="no-referrer" />
               </div>
             </div>
             <div className="carousel-card">
               <h4>Maquillaje</h4>
               <div className="phone-mockup">
-                <img src="/src/assets/images/app_maquillaje_1783107227201.jpg" alt="App Makeup" referrerPolicy="no-referrer" />
+                <img src={appMaquillaje} alt="App Makeup" referrerPolicy="no-referrer" />
               </div>
             </div>
             <div className="carousel-card">
               <h4>Gimnasio</h4>
               <div className="phone-mockup">
-                <img src="/src/assets/images/business_app_booking_1783060903033.jpg" alt="App Gym" referrerPolicy="no-referrer" />
+                <img src={appGimnasio} alt="App Gym" referrerPolicy="no-referrer" />
               </div>
             </div>
             <div className="carousel-card">
@@ -325,36 +331,36 @@ export default function Hero({ onNavigate }: HeroProps) {
                 </div>
               </div>
             </div>
-            
+
             {/* Duplicado idéntico para el efecto infinito */}
             <div className="carousel-card">
               <h4>Dulcería</h4>
               <div className="phone-mockup">
-                <img src="/src/assets/images/app_dulceria_1783107185110.jpg" alt="App Dulcería" referrerPolicy="no-referrer" />
+                <img src={appDulceria} alt="App Dulcería" referrerPolicy="no-referrer" />
               </div>
             </div>
             <div className="carousel-card">
               <h4>Comida Rápida</h4>
               <div className="phone-mockup">
-                <img src="/src/assets/images/app_comida_rapida_1783107202989.jpg" alt="App Burgers" referrerPolicy="no-referrer" />
+                <img src={appComidaRapida} alt="App Burgers" referrerPolicy="no-referrer" />
               </div>
             </div>
             <div className="carousel-card">
               <h4>Manicure</h4>
               <div className="phone-mockup">
-                <img src="/src/assets/images/app_manicure_1783107216506.jpg" alt="App Nails" referrerPolicy="no-referrer" />
+                <img src={appManicure} alt="App Nails" referrerPolicy="no-referrer" />
               </div>
             </div>
             <div className="carousel-card">
               <h4>Maquillaje</h4>
               <div className="phone-mockup">
-                <img src="/src/assets/images/app_maquillaje_1783107227201.jpg" alt="App Makeup" referrerPolicy="no-referrer" />
+                <img src={appMaquillaje} alt="App Makeup" referrerPolicy="no-referrer" />
               </div>
             </div>
             <div className="carousel-card">
               <h4>Gimnasio</h4>
               <div className="phone-mockup">
-                <img src="/src/assets/images/business_app_booking_1783060903033.jpg" alt="App Gym" referrerPolicy="no-referrer" />
+                <img src={appGimnasio} alt="App Gym" referrerPolicy="no-referrer" />
               </div>
             </div>
             <div className="carousel-card">
