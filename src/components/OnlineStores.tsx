@@ -89,15 +89,8 @@ export default function OnlineStores() {
           </div>
         </div>
 
-        {/* Dos Botones Grandes */}
+        {/* Botón de Contacto WhatsApp */}
         <div className="flex flex-col sm:flex-row gap-4 pt-2" id="tiendas-actions">
-          <a
-            href="#cotizador"
-            className="inline-flex items-center justify-center gap-2 px-7 py-4 bg-white hover:bg-slate-100 text-slate-950 font-bold rounded-2xl shadow-xl transition-all duration-300 hover:scale-105"
-          >
-            <Play className="h-4.5 w-4.5 fill-current text-slate-950" />
-            Ver Demostración
-          </a>
           <a
             href="https://wa.me/50372332152?text=Hola,%20quisiera%20más%20información%20sobre%20la%20creación%20de%20mi%20Tienda%20Online."
             target="_blank"

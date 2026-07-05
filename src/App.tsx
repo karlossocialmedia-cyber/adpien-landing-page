@@ -1,17 +1,14 @@
 import React from 'react';
 import Navbar from './components/Navbar';
-import QuickNavTabs from './components/QuickNavTabs';
 import Hero from './components/Hero';
 import ImageSlider from './components/ImageSlider';
+import Process from './components/Process';
 import Services from './components/Services';
 import OnlineStores from './components/OnlineStores';
 import BookingServices from './components/BookingServices';
 import Restaurants from './components/Restaurants';
-import UseCases from './components/UseCases';
-import Calculator from './components/Calculator';
+import DigitalProducts from './components/DigitalProducts';
 import Testimonials from './components/Testimonials';
-import Pricing from './components/Pricing';
-import FAQ from './components/FAQ';
 import Footer from './components/Footer';
 
 export default function App() {
@@ -36,14 +33,14 @@ export default function App() {
       {/* Sections Wrapper */}
       <main className="flex-1 relative z-10">
         
-        {/* Quick horizontal-sliding navigation tabs */}
-        <QuickNavTabs onNavigate={handleNavigate} />
-
         {/* 1. Hero Section & Template Switcher */}
         <Hero onNavigate={handleNavigate} />
 
         {/* Widescreen Business App Showcase Slider */}
         <ImageSlider />
+
+        {/* 1.5. Nuestro Proceso (How it works in 4 visual steps) */}
+        <Process />
 
         {/* 2. Services / What we build */}
         <Services />
@@ -57,20 +54,11 @@ export default function App() {
         {/* 3.6. Restaurantes (Interactive restaurants section) */}
         <Restaurants />
 
-        {/* 4. Use Cases with Interactive Mini-apps */}
-        <UseCases />
-
-        {/* 6. Ultimate Quote Calculator & WhatsApp Form */}
-        <Calculator />
+        {/* 3.7. Productos Digitales (Interactive digital products section) */}
+        <DigitalProducts />
 
         {/* 7. Client Testimonials */}
         <Testimonials />
-
-        {/* 8. Transparent Investment plans */}
-        <Pricing />
-
-        {/* 9. FAQ Section */}
-        <FAQ />
 
       </main>
 

@@ -50,14 +50,8 @@ export default function Restaurants() {
           </div>
         </div>
 
-        {/* Dos botones principales abajo alineados horizontalmente */}
+        {/* Botón de Contacto WhatsApp */}
         <div className="flex flex-col sm:flex-row gap-4 pt-2">
-          <a
-            href="#cotizador"
-            className="inline-flex items-center justify-center gap-2 px-7 py-4 bg-violet-600 hover:bg-violet-700 text-white font-bold rounded-2xl shadow-lg shadow-violet-600/20 hover:scale-105 transition-all duration-300 text-center"
-          >
-            Empezar gratis 14 días
-          </a>
           <a
             href="https://wa.me/50372332152?text=Hola,%20quisiera%20más%20información%20sobre%20el%20Menú%20Digital%20y%20Pedidos%20por%20WhatsApp%20para%20Restaurantes."
             target="_blank"

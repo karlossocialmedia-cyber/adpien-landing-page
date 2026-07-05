@@ -150,12 +150,11 @@ export const SERVICES: ServiceCard[] = [
   },
   {
     id: 'ai-automation',
-    title: 'Inteligencia Artificial y Automatización',
-    description: 'Optimizamos tus procesos de negocio integrando Gemini AI. Automatizamos la atención, catalogación y reporte de leads sin intervención humana.',
+    title: 'Automatización',
+    description: 'Optimizamos tus procesos de negocio. Automatizamos la atención, catalogación y reporte de leads sin intervención humana.',
     icon: 'Sparkles',
     badge: 'Futurista',
     bullets: [
-      'Agentes inteligentes y chatbots entrenados',
       'Sincronización instantánea con Google Sheets',
       'Automatización de correos y WhatsApp Masivos',
       'Análisis predictivo de tus ventas'

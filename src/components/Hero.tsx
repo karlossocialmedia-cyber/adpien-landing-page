@@ -49,18 +49,20 @@ export default function Hero({ onNavigate }: HeroProps) {
 
             {/* CTAs */}
             <div className="flex flex-col sm:flex-row items-center justify-center gap-4 pt-2 w-full sm:w-auto">
-              <button
-                onClick={() => onNavigate('cotizador')}
+              <a
+                href="https://wa.me/56900000000"
+                target="_blank"
+                rel="noopener noreferrer"
                 className="w-full sm:w-auto bg-electric-blue hover:bg-electric-blue/90 text-white font-bold px-8 py-4 rounded-xl text-md shadow-lg shadow-electric-blue/30 hover:shadow-electric-blue/50 flex items-center justify-center gap-3 transition-all duration-300 transform hover:-translate-y-0.5 cursor-pointer"
               >
                 Cotizar Proyecto Gratis
                 <ArrowRight className="h-5 w-5" />
-              </button>
+              </a>
               <button
-                onClick={() => onNavigate('casos')}
+                onClick={() => onNavigate('servicios')}
                 className="w-full sm:w-auto bg-slate-900 hover:bg-slate-800 text-slate-100 border border-slate-700 font-semibold px-8 py-4 rounded-xl text-md flex items-center justify-center gap-2 transition-all duration-300 cursor-pointer"
               >
-                Ver Demostraciones
+                Ver Servicios
               </button>
             </div>
           </div>

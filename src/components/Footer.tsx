@@ -68,8 +68,6 @@ export default function Footer({ onNavigate }: FooterProps) {
                 <li><button onClick={() => onNavigate('inicio')} className="hover:text-white transition-colors cursor-pointer">Inicio</button></li>
                 <li><button onClick={() => onNavigate('servicios')} className="hover:text-white transition-colors cursor-pointer">Servicios</button></li>
                 <li><button onClick={() => onNavigate('constructor')} className="hover:text-white transition-colors cursor-pointer">Constructor en Vivo</button></li>
-                <li><button onClick={() => onNavigate('casos')} className="hover:text-white transition-colors cursor-pointer">Casos de Uso</button></li>
-                <li><button onClick={() => onNavigate('cotizador')} className="hover:text-white transition-colors cursor-pointer">Cotizador Inteligente</button></li>
                 <li><button onClick={() => onNavigate('precios')} className="hover:text-white transition-colors cursor-pointer">Precios & Planes</button></li>
               </ul>
             </div>
@@ -131,6 +129,56 @@ export default function Footer({ onNavigate }: FooterProps) {
             </div>
 
           </div>
+        </div>
+
+        {/* Fila de Redes Sociales */}
+        <div className="footer-socials" style={{ display: 'flex', gap: '16px', justifyContent: 'center', marginTop: '20px', paddingTop: '15px', borderTop: '1px solid rgba(255,255,255,0.05)' }}>
+          <a 
+            href="https://www.instagram.com/pinedacode/" 
+            target="_blank" 
+            rel="noopener noreferrer" 
+            className="social-icon inline-flex items-center justify-center w-10 h-10 rounded-xl bg-slate-900/60 border border-slate-800/50 text-slate-400 hover:text-[#38BDF8] hover:border-[#38BDF8]/40 hover:-translate-y-[3px] opacity-60 hover:opacity-100 transition-all duration-300"
+            style={{ transition: 'all 0.3s ease' }}
+          >
+            <svg className="h-5 w-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+              <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
+              <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
+              <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
+            </svg>
+          </a>
+          <a 
+            href="https://www.linkedin.com/in/pinedacode/" 
+            target="_blank" 
+            rel="noopener noreferrer" 
+            className="social-icon inline-flex items-center justify-center w-10 h-10 rounded-xl bg-slate-900/60 border border-slate-800/50 text-slate-400 hover:text-[#38BDF8] hover:border-[#38BDF8]/40 hover:-translate-y-[3px] opacity-60 hover:opacity-100 transition-all duration-300"
+            style={{ transition: 'all 0.3s ease' }}
+          >
+            <svg className="h-5 w-5" viewBox="0 0 24 24" fill="currentColor">
+              <path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/>
+            </svg>
+          </a>
+          <a 
+            href="https://www.facebook.com/profile.php?id=61591552985782" 
+            target="_blank" 
+            rel="noopener noreferrer" 
+            className="social-icon inline-flex items-center justify-center w-10 h-10 rounded-xl bg-slate-900/60 border border-slate-800/50 text-slate-400 hover:text-[#38BDF8] hover:border-[#38BDF8]/40 hover:-translate-y-[3px] opacity-60 hover:opacity-100 transition-all duration-300"
+            style={{ transition: 'all 0.3s ease' }}
+          >
+            <svg className="h-5 w-5" viewBox="0 0 24 24" fill="currentColor">
+              <path d="M22 12c0-5.52-4.48-10-10-10S2 6.48 2 12c0 4.84 3.44 8.87 8 9.8V15H8v-3h2V9.5C10 7.57 11.57 6 13.5 6H16v3h-2c-.55 0-1 .45-1 1v2h3v3h-3v6.95c4.56-.93 8-4.96 8-9.75z"/>
+            </svg>
+          </a>
+          <a 
+            href="https://www.tiktok.com/@pinedacode" 
+            target="_blank" 
+            rel="noopener noreferrer" 
+            className="social-icon inline-flex items-center justify-center w-10 h-10 rounded-xl bg-slate-900/60 border border-slate-800/50 text-slate-400 hover:text-[#38BDF8] hover:border-[#38BDF8]/40 hover:-translate-y-[3px] opacity-60 hover:opacity-100 transition-all duration-300"
+            style={{ transition: 'all 0.3s ease' }}
+          >
+            <svg className="h-5 w-5" viewBox="0 0 24 24" fill="currentColor">
+              <path d="M12.525.02c1.31-.02 2.61-.01 3.91-.02.08 1.53.63 3.02 1.59 4.23.94 1.18 2.27 2 3.73 2.37v3.9c-1.89-.09-3.73-.89-5.11-2.19-.18-.17-.35-.35-.51-.54v7.71c.1 2.38-1.07 4.75-3.13 5.96-2.19 1.28-5.08 1.23-7.21-.14-2.11-1.36-3.21-4-2.73-6.49.43-2.22 2.24-4.09 4.47-4.52 1.45-.28 2.97.11 4.1.1v3.91c-1.05-.33-2.23-.08-3.04.7-.84.81-1.09 2.1-1.12 3.23-.02 1.2.5 2.4 1.46 3.12 1 .75 2.41.87 3.51.27 1-.55 1.62-1.63 1.62-2.78V.02z"/>
+            </svg>
+          </a>
         </div>
 
         {/* Footer Bottom (Copyrights & Legals) */}

@@ -28,6 +28,10 @@
   background: #0066FF;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   font-family: var(--font-sans);
   background-color: #080E1E;
@@ -322,3 +326,4 @@ body {
     text-align: center;
   }
 }
+

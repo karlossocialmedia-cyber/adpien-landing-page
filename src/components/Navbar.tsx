@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { Code2, Menu, X, MessageCircle, ShoppingBag, Calendar, Utensils, Download, Cpu } from 'lucide-react';
+import { Code2, Menu, X, MessageCircle, ShoppingBag, Calendar, Utensils, Download, Cpu, HelpCircle } from 'lucide-react';
 
 interface NavbarProps {
   onNavigate: (sectionId: string) => void;
@@ -76,6 +76,19 @@ export default function Navbar({ onNavigate }: NavbarProps) {
                       <p className="text-[10px] text-slate-400 mt-0.5 leading-tight">Nuestra plataforma core de software</p>
                     </div>
                   </div>
+
+                  <div 
+                    className="flex items-start gap-3 p-2 rounded-lg hover:bg-white/5 transition-colors duration-200 cursor-pointer group/item" 
+                    onClick={() => handleItemClick('como-funciona')}
+                  >
+                    <div className="text-[#38bdf8] p-1.5 rounded-lg group-hover/item:scale-110 transition-transform duration-200">
+                      <HelpCircle className="h-4 w-4" />
+                    </div>
+                    <div>
+                      <h5 className="font-bold text-white text-xs">Cómo funciona</h5>
+                      <p className="text-[10px] text-slate-400 mt-0.5 leading-tight">Descubre nuestro proceso en 4 pasos</p>
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>
@@ -135,7 +148,7 @@ export default function Navbar({ onNavigate }: NavbarProps) {
                 {/* Productos digitales */}
                 <div 
                   className="flex items-start gap-3.5 p-3 rounded-xl hover:bg-white/5 transition-colors duration-200 cursor-pointer group/item" 
-                  onClick={() => handleItemClick('casos')}
+                  onClick={() => handleItemClick('productos-digitales')}
                 >
                   <div className="text-[#38bdf8] p-2.5 rounded-xl group-hover/item:scale-110 transition-transform duration-200">
                     <Download className="h-6 w-6" />
@@ -148,21 +161,74 @@ export default function Navbar({ onNavigate }: NavbarProps) {
               </div>
             </div>
 
-            {/* 3. Precios */}
-            <button
-              onClick={() => handleItemClick('precios')}
-              className="text-slate-300 hover:text-white transition-colors duration-200 text-sm font-semibold cursor-pointer py-2"
+            {/* Redes Sociales en NavBar */}
+            <div 
+              className="navbar-socials hidden md:flex items-center gap-3.5 mr-4"
+              style={{ display: 'flex', gap: '16px', alignItems: 'center', marginRight: '24px' }}
             >
-              Precios
-            </button>
+              <a 
+                href="https://www.instagram.com/pinedacode/" 
+                target="_blank" 
+                rel="noopener noreferrer" 
+                className="hover:scale-110 hover:text-[#38BDF8] text-[#94a3b8] transition-all duration-300"
+                style={{ color: '#94a3b8', transition: 'all 0.3s ease' }}
+                aria-label="Instagram"
+              >
+                <svg className="h-4.5 w-4.5" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+                  <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
+                  <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
+                  <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
+                </svg>
+              </a>
+              <a 
+                href="https://www.linkedin.com/in/pinedacode/" 
+                target="_blank" 
+                rel="noopener noreferrer" 
+                className="hover:scale-110 hover:text-[#38BDF8] text-[#94a3b8] transition-all duration-300"
+                style={{ color: '#94a3b8', transition: 'all 0.3s ease' }}
+                aria-label="LinkedIn"
+              >
+                <svg className="h-4.5 w-4.5" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+                  <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path>
+                  <rect x="2" y="9" width="4" height="12"></rect>
+                  <circle cx="4" cy="4" r="2"></circle>
+                </svg>
+              </a>
+              <a 
+                href="https://www.facebook.com/profile.php?id=61591552985782" 
+                target="_blank" 
+                rel="noopener noreferrer" 
+                className="hover:scale-110 hover:text-[#38BDF8] text-[#94a3b8] transition-all duration-300"
+                style={{ color: '#94a3b8', transition: 'all 0.3s ease' }}
+                aria-label="Facebook"
+              >
+                <svg className="h-4.5 w-4.5" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+                  <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"></path>
+                </svg>
+              </a>
+              <a 
+                href="https://www.tiktok.com/@pinedacode" 
+                target="_blank" 
+                rel="noopener noreferrer" 
+                className="hover:scale-110 hover:text-[#38BDF8] text-[#94a3b8] transition-all duration-300"
+                style={{ color: '#94a3b8', transition: 'all 0.3s ease' }}
+                aria-label="TikTok"
+              >
+                <svg className="h-4.5 w-4.5" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+                  <path d="M9 12a4 4 0 1 0 4 4V4a5 5 0 0 0 5 5"></path>
+                </svg>
+              </a>
+            </div>
 
             {/* 4. Link para WhatsApp */}
-            <button
-              onClick={() => handleItemClick('cotizador')}
+            <a
+              href="https://wa.me/56900000000"
+              target="_blank"
+              rel="noopener noreferrer"
               className="bg-[#25D366] hover:bg-[#20ba5a] text-white text-sm font-bold cursor-pointer py-2 px-5 rounded-full flex items-center gap-2 shadow-lg shadow-[#25D366]/20 hover:scale-105 transition-all duration-200"
             >
               <MessageCircle className="h-4 w-4 text-white fill-white" /> Link para WhatsApp
-            </button>
+            </a>
           </div>
 
           {/* Mobile menu button */}
@@ -196,6 +262,12 @@ export default function Navbar({ onNavigate }: NavbarProps) {
               >
                 ⚙️ Características
               </button>
+              <button
+                onClick={() => handleItemClick('como-funciona')}
+                className="block w-full text-left px-6 py-2 text-sm text-slate-300 hover:text-white hover:bg-slate-800/50 rounded-lg transition-all"
+              >
+                🧭 Cómo funciona
+              </button>
             </div>
 
             {/* Soluciones Group */}
@@ -222,31 +294,23 @@ export default function Navbar({ onNavigate }: NavbarProps) {
                 🍴 Restaurantes
               </button>
               <button
-                onClick={() => handleItemClick('casos')}
+                onClick={() => handleItemClick('productos-digitales')}
                 className="block w-full text-left px-6 py-2 text-sm text-slate-300 hover:text-white hover:bg-slate-800/50 rounded-lg transition-all"
               >
                 📥 Productos digitales
               </button>
             </div>
 
-            {/* Precios */}
-            <div className="pt-2">
-              <button
-                onClick={() => handleItemClick('precios')}
-                className="block w-full text-left px-4 py-3 text-base font-semibold text-slate-300 hover:text-white hover:bg-slate-800/50 rounded-lg transition-all"
-              >
-                Precios
-              </button>
-            </div>
-
             {/* Link para WhatsApp */}
             <div className="pt-2">
-              <button
-                onClick={() => handleItemClick('cotizador')}
+              <a
+                href="https://wa.me/56900000000"
+                target="_blank"
+                rel="noopener noreferrer"
                 className="w-full bg-[#25D366] hover:bg-[#20ba5a] text-white font-bold py-3 px-6 rounded-xl shadow-lg shadow-[#25D366]/20 flex items-center justify-center gap-2"
               >
                 <MessageCircle className="h-5 w-5 text-white fill-white" /> Link para WhatsApp
-              </button>
+              </a>
             </div>
           </div>
         </div>
