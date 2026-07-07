@@ -93,7 +93,7 @@ export default function ImageSlider() {
   const activeSlide = SLIDES[currentIndex];
 
   const handleWhatsappInquiry = (appTitle: string) => {
-    const text = encodeURIComponent(`Hola PINEDA CODE! Me interesó ver su demo de "${appTitle}". Quisiera saber más información sobre cómo adaptarla a mi negocio.`);
+    const text = encodeURIComponent(`Hola ADPIEN! Me interesó ver su demo de "${appTitle}". Quisiera saber más información sobre cómo adaptarla a mi negocio.`);
     window.open(`https://wa.me/56900000000?text=${text}`, '_blank');
   };
 

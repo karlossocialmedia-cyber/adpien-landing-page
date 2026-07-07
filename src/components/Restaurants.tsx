@@ -68,7 +68,7 @@ export default function Restaurants() {
       <div className="restaurante-imagen-wrapper" style={{ width: '100%', display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
         <img 
           src="https://i.ibb.co/KcCrkNkD/image-6295502c-1.png" 
-          alt="Menú Digital de Restaurante Pineda Code" 
+          alt="Menú Digital de Restaurante ADPIEN" 
           style={{ width: '100%', maxWidth: '440px', height: 'auto', objectFit: 'contain', filter: 'drop-shadow(0 20px 30px rgba(0,0,0,0.5))' }}
           referrerPolicy="no-referrer"
         />

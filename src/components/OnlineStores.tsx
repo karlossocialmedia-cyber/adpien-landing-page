@@ -107,7 +107,7 @@ export default function OnlineStores() {
       <div className="tienda-imagen-wrapper relative z-10" style={{ width: '100%', display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
          <img 
           src="https://i.ibb.co/hJyn6n8X/tienda-hero-removebg-preview-2.png" 
-          alt="Tiendas Online Pineda Code" 
+          alt="Tiendas Online ADPIEN" 
           style={{ width: '100%', maxWidth: '480px', height: 'auto', objectFit: 'contain', filter: 'drop-shadow(0 20px 30px rgba(0,0,0,0.4))' }}
           referrerPolicy="no-referrer"
         />

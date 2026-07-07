@@ -32,7 +32,7 @@ export default function Footer({ onNavigate }: FooterProps) {
                 <Code2 className="h-5 w-5" />
               </div>
               <span className="font-display font-extrabold text-xl tracking-tight text-white">
-                PINEDA<span className="text-electric-blue">CODE</span>
+                AD<span className="text-purple-500 drop-shadow-[0_0_8px_rgba(168,85,247,0.6)]">PIEN</span>
               </span>
             </div>
             
@@ -78,7 +78,7 @@ export default function Footer({ onNavigate }: FooterProps) {
               <ul className="space-y-3.5 text-xs text-slate-400 font-light">
                 <li className="flex items-center gap-2">
                   <Mail className="h-4 w-4 text-electric-cyan shrink-0" />
-                  <a href="mailto:soporte@pinedacode.com" className="hover:text-white transition-colors">soporte@pinedacode.com</a>
+                  <a href="mailto:soporte@pinedacode.com" className="hover:text-white transition-colors">soporte@adpien.com</a>
                 </li>
                 <li className="flex items-center gap-2">
                   <MessageSquare className="h-4 w-4 text-emerald-400 shrink-0" />
@@ -183,7 +183,7 @@ export default function Footer({ onNavigate }: FooterProps) {
 
         {/* Footer Bottom (Copyrights & Legals) */}
         <div className="pt-8 flex flex-col sm:flex-row items-center justify-between gap-4 text-slate-500 text-[10px] sm:text-xs">
-          <span>&copy; {new Date().getFullYear()} PINEDA CODE. Todos los derechos reservados.</span>
+          <span>&copy; {new Date().getFullYear()} ADPIEN. Todos los derechos reservados.</span>
           <div className="flex gap-4">
             <a href="#privacidad" className="hover:text-slate-400 transition-colors">Política de Privacidad</a>
             <span>•</span>

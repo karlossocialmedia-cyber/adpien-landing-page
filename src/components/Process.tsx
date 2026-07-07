@@ -53,7 +53,7 @@ export default function Process() {
         <h2 className="text-3xl md:text-4xl lg:text-5xl font-extrabold text-center font-display tracking-tight text-white mb-4">
           ¿Cómo funciona{" "}
           <span className="text-transparent bg-clip-text bg-gradient-to-r from-electric-blue via-blue-400 to-purple-500 font-display">
-            PINEDA CODE
+            ADPIEN
           </span>
           ?<br />
           <span className="text-2xl md:text-3xl lg:text-4xl font-semibold text-slate-300 font-display mt-2 block">

@@ -68,7 +68,7 @@ export default function DigitalProducts() {
       <div className="digital-imagen-wrapper" style={{ width: '100%', display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
         <img 
           src="https://i.ibb.co/dwQjsGSC/image-92585192-1.png" 
-          alt="Soluciones Multi-App Pineda Code" 
+          alt="Soluciones Multi-App ADPIEN" 
           style={{ width: '100%', maxWidth: '500px', height: 'auto', objectFit: 'contain', filter: 'drop-shadow(0 20px 30px rgba(0,0,0,0.5))' }}
           referrerPolicy="no-referrer"
         />

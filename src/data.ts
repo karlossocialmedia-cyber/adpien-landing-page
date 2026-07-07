@@ -34,7 +34,7 @@ export const APP_TEMPLATES: AppTemplate[] = [
     id: 'dashboard',
     name: 'Panel Administrativo (CRM)',
     icon: 'LayoutDashboard',
-    title: 'Pineda Analytics',
+    title: 'Adpien Analytics',
     subtitle: 'Control total de tu facturación',
     color: 'from-emerald-600 to-teal-800',
     features: ['Métricas de ventas en tiempo real', 'Gestión de clientes y leads', 'Exportación a Google Sheets', 'Gráficos interactivos en D3'],
@@ -44,7 +44,7 @@ export const APP_TEMPLATES: AppTemplate[] = [
     id: 'ai',
     name: 'Asistente IA Integrado',
     icon: 'Sparkles',
-    title: 'Pineda AI Butler',
+    title: 'Adpien AI Butler',
     subtitle: 'Soporte inteligente 24/7',
     color: 'from-violet-600 to-fuchsia-800',
     features: ['Respuestas instantáneas con Gemini', 'Generación de sugerencias', 'Atención al cliente multilingüe', 'Conexión con base de datos'],
@@ -178,7 +178,7 @@ export const USE_CASE_TABS: UseCaseTab[] = [
     icon: 'Calendar',
     subtitle: 'Agendamiento y Señal de Pago',
     description: 'Ideal para clínicas médicas, estéticas, barberías o consultores independientes. Tus clientes eligen la fecha, la hora, el servicio específico y el profesional preferido de tu staff. Pueden realizar un pago parcial para asegurar la reserva y recibir recordatorios automáticos.',
-    mockTitle: 'Clínica Dental Pineda',
+    mockTitle: 'Clínica Dental Adpien',
     mockSubtitle: 'Agendamiento Web'
   },
   {
@@ -196,7 +196,7 @@ export const USE_CASE_TABS: UseCaseTab[] = [
     icon: 'Users',
     subtitle: 'Captación Calificada de Clientes',
     description: 'Reemplaza los aburridos formularios de contacto por cuestionarios dinámicos y lúdicos que filtran las necesidades de tus clientes. Obtén toda la información estructurada que tu equipo de ventas necesita para preparar una propuesta comercial perfecta antes de contactarlos.',
-    mockTitle: 'Pineda Consultores',
+    mockTitle: 'Adpien Consultores',
     mockSubtitle: 'Asesorías Financieras'
   }
 ];
@@ -253,7 +253,7 @@ export const TESTIMONIALS: Testimonial[] = [
     role: 'CEO & Fundador',
     company: 'Sabor y Carbón Restaurant',
     image: 'https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=150&auto=format&fit=crop&q=80',
-    text: 'PINEDA CODE transformó radicalmente nuestra operación de delivery. Nos construyeron un menú digital con checkout a WhatsApp inspirado en el sistema de Whataform, pero adaptado a nuestra cocina. ¡Nuestras ventas se duplicaron en solo 40 días!',
+    text: 'ADPIEN transformó radicalmente nuestra operación de delivery. Nos construyeron un menú digital con checkout a WhatsApp inspirado en el sistema de Whataform, pero adaptado a nuestra cocina. ¡Nuestras ventas se duplicaron en solo 40 días!',
     rating: 5,
     tags: ['E-commerce', 'WhatsApp']
   },
@@ -263,7 +263,7 @@ export const TESTIMONIALS: Testimonial[] = [
     role: 'Directora de Operaciones',
     company: 'Clínica Dermacare',
     image: 'https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?w=150&auto=format&fit=crop&q=80',
-    text: 'Estábamos perdiendo clientes porque las reservas telefónicas colapsaban. El equipo de PINEDA CODE nos desarrolló un sistema de reserva web con sincronización a Google Calendar y pago de seña integrado. Práctico, rápido y libre de fricciones.',
+    text: 'Estábamos perdiendo clientes porque las reservas telefónicas colapsaban. El equipo de ADPIEN nos desarrolló un sistema de reserva web con sincronización a Google Calendar y pago de seña integrado. Práctico, rápido y libre de fricciones.',
     rating: 5,
     tags: ['SaaS', 'Reservas']
   },
@@ -273,7 +273,7 @@ export const TESTIMONIALS: Testimonial[] = [
     role: 'Director Ejecutivo',
     company: 'Apex Importadores',
     image: 'https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=150&auto=format&fit=crop&q=80',
-    text: 'Teníamos un CRM obsoleto que nadie usaba. PINEDA CODE diseñó una intranet a medida con reportes en tiempo real y flujos automatizados con Gemini AI. El soporte es impecable y la velocidad del software es asombrosa.',
+    text: 'Teníamos un CRM obsoleto que nadie usaba. ADPIEN diseñó una intranet a medida con reportes en tiempo real y flujos automatizados con Gemini AI. El soporte es impecable y la velocidad del software es asombrosa.',
     rating: 5,
     tags: ['Software a Medida', 'AI']
   }
@@ -335,8 +335,8 @@ export const PRICING_PLANS: PricingPlan[] = [
 
 export const FAQS: FAQItem[] = [
   {
-    question: '¿Qué diferencia hay entre PINEDA CODE y un constructor no-code como Whataform?',
-    answer: 'Whataform es una excelente plataforma de suscripción mensual donde tú mismo construyes tus formularios con plantillas preestablecidas. En PINEDA CODE, desarrollamos soluciones personalizadas que tú posees al 100%. No hay cuotas de suscripción mensuales forzosas por el uso de tu software, el diseño se adapta a la perfección a tu identidad visual y podemos programar cualquier lógica compleja o integración de IA que los constructores estándar no admiten.'
+    question: '¿Qué diferencia hay entre ADPIEN y un constructor no-code como Whataform?',
+    answer: 'Whataform es una excelente plataforma de suscripción mensual donde tú mismo construyes tus formularios con plantillas preestablecidas. En ADPIEN, desarrollamos soluciones personalizadas que tú posees al 100%. No hay cuotas de suscripción mensuales forzosas por el uso de tu software, el diseño se adapta a la perfección a tu identidad visual y podemos programar cualquier lógica compleja o integración de IA que los constructores estándar no admiten.'
   },
   {
     question: '¿Cómo funciona la integración con WhatsApp?',
@@ -348,7 +348,7 @@ export const FAQS: FAQItem[] = [
   },
   {
     question: '¿Puedo integrar pasarelas de pago locales de mi país?',
-    answer: 'Sí. A diferencia de las plataformas rígidas, en PINEDA CODE integramos pasarelas internacionales líderes como Stripe y PayPal, pero también pasarelas locales según tu país (Mercado Pago, Kushki, PayU, dLocal, Wompi, etc.) para que tus clientes paguen en su moneda nacional.'
+    answer: 'Sí. A diferencia de las plataformas rígidas, en ADPIEN integramos pasarelas internacionales líderes como Stripe y PayPal, pero también pasarelas locales según tu país (Mercado Pago, Kushki, PayU, dLocal, Wompi, etc.) para que tus clientes paguen en su moneda nacional.'
   },
   {
     question: '¿Cuál es el tiempo de entrega de un proyecto?',

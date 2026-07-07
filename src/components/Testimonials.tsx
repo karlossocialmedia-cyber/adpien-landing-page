@@ -18,7 +18,7 @@ export default function Testimonials() {
             Casos reales de transformación digital
           </p>
           <p className="text-slate-400 text-md sm:text-lg font-light">
-            Descubre cómo empresas locales e internacionales han automatizado sus operaciones cotidianas y maximizado su rentabilidad de la mano de PINEDA CODE.
+            Descubre cómo empresas locales e internacionales han automatizado sus operaciones cotidianas y maximizado su rentabilidad de la mano de ADPIEN.
           </p>
         </div>
 

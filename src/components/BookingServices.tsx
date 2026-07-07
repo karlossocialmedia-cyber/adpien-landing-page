@@ -68,7 +68,7 @@ export default function BookingServices() {
       <div className="citas-imagen-wrapper relative z-10" style={{ width: '100%', display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
         <img 
           src="https://i.ibb.co/zWhT46wT/image-379a5e46-Photoroom.png" 
-          alt="Sistema de Agendamiento Pineda Code" 
+          alt="Sistema de Agendamiento ADPIEN" 
           style={{ width: '100%', maxWidth: '460px', height: 'auto', objectFit: 'contain', filter: 'drop-shadow(0 20px 30px rgba(0,0,0,0.5))' }}
           referrerPolicy="no-referrer"
         />

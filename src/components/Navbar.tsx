@@ -43,7 +43,7 @@ export default function Navbar({ onNavigate }: NavbarProps) {
               <Code2 className="h-6 w-6" />
             </div>
             <span className="font-display font-extrabold text-2xl tracking-tight text-white">
-              PINEDA<span className="text-electric-blue">CODE</span>
+              AD<span className="text-purple-500 drop-shadow-[0_0_8px_rgba(168,85,247,0.6)]">PIEN</span>
             </span>
           </div>
 
