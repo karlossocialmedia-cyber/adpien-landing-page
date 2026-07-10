@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Github, Linkedin, MessageSquare, Mail, MapPin, Send } from 'lucide-react';
+import { Code2, Github, Linkedin, MessageSquare, Mail, MapPin, Send } from 'lucide-react';
 
 interface FooterProps {
   onNavigate: (sectionId: string) => void;
@@ -28,12 +28,9 @@ export default function Footer({ onNavigate }: FooterProps) {
           {/* Column 1: Brand details (4 Columns) */}
           <div className="lg:col-span-4 space-y-6">
             <div className="flex items-center gap-2 cursor-pointer" onClick={() => onNavigate('inicio')}>
-              <img
-                src="/image_931db897_(1)-Photoroom.png"
-                alt="ADPIEN Logo"
-                className="object-contain"
-                style={{ width: '40px', height: '40px' }}
-              />
+              <div className="bg-electric-blue p-2 rounded-lg text-white shadow shadow-electric-blue/30">
+                <Code2 className="h-5 w-5" />
+              </div>
               <span className="font-display font-extrabold text-xl tracking-tight text-white">
                 AD<span className="text-purple-500 drop-shadow-[0_0_8px_rgba(168,85,247,0.6)]">PIEN</span>
               </span>
